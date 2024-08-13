@@ -1,0 +1,33 @@
+WHAT IS HTML?
+Html Stands for HYPER-TEXT-MARKUP language.
+by using html we can develop or structure of  the wed pages.
+html is introduced by the 'TIM BERNERS LEE" IN 1993 .
+html standerd version is relesed in 1999.
+html is case sensitive language.
+
+Why Learn HTML?
+Foundation of Web Development: HTML is the basic building block of all web pages. Knowing HTML is essential for any web developer.
+Accessibility: Proper use of HTML ensures that websites are accessible to all users, including those with disabilities.
+SEO (Search Engine Optimization): Well-structured HTML helps search engines understand the content of your web pages, improving search rankings.
+
+Basic Structure of an HTML Document:
+An HTML document typically follows a standard structur
+
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: The root element that contains all the other HTML elements.
+<head>: Contains meta-information about the document, like its title and links to CSS stylesheets.
+<body>: Contains the content that is displayed in the browser, including text, images, links, etc.
+eg:
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
