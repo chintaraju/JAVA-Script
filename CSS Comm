@@ -1,0 +1,117 @@
+CSS means Cascading Style sheet.
+CSS are used to apply style to the html tags.
+  
+Element Selector: Targets all elements of a specific type.
+p {
+  color: blue;
+  back ground-Image="";
+  back ground colour="";
+  
+  
+}
+ID Selector: Targets a single element with a specific id.
+#header {
+  background-color: yellow;
+}
+Class Selector: Targets all elements with a specific class.
+
+.container {
+  width: 100%;
+}
+Universal Selector: Targets all elements.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+Combinator Selectors
+Descendant Selector: Selects all elements that are descendants of a specified element.
+
+div p {
+  color: red;
+}
+Child Selector: Selects all elements that are direct children of a specified element.
+
+div > p {
+  color: green;
+}
+Adjacent Sibling Selector: Selects an element that is immediately preceded by a specified element.
+
+h1 + p {
+  color: purple;
+}
+General Sibling Selector: Selects all elements that are siblings of a specified element.
+
+h1 ~ p {
+  color: orange;
+}
+Attribute Selectors
+[attribute]: Selects elements with a specified attribute.
+
+a[target] {
+  color: blue;
+}
+[attribute="value"]: Selects elements with a specific attribute value.
+
+input[type="text"] {
+  border: 1px solid #000;
+}
+[attribute^="value"]: Selects elements with an attribute value starting with a specified value.
+
+a[href^="https"] {
+  color: green;
+}
+[attribute$="value"]: Selects elements with an attribute value ending with a specified value.
+
+a[href$=".pdf"] {
+  color: red;
+}
+*[attribute="value"]**: Selects elements with an attribute value containing a specified value.
+
+a[href*="example"] {
+  color: purple;
+}
+Pseudo-Class Selectors
+:hover: Targets an element when the mouse hovers over it.
+
+a:hover {
+  color: orange;
+}
+:first-child: Targets the first child element within a parent.
+
+p:first-child {
+  font-weight: bold;
+}
+:last-child: Targets the last child element within a parent.
+
+p:last-child {
+  font-style: italic;
+}
+:nth-child(n): Targets the nth child element within a parent.
+
+li:nth-child(2) {
+  color: red;
+}
+Pseudo-Element Selectors
+::before: Inserts content before an element's content.
+
+p::before {
+  content: "Note: ";
+  font-weight: bold;
+}
+::after: Inserts content after an element's content.
+p::after {
+  content: ".";
+}
+::first-line: Styles the first line of an element.
+
+p::first-line {
+  color: blue;
+  font-weight: bold;
+}
+::first-letter: Styles the first letter of an element.
+
+p::first-letter {
+  font-size: 2em;
+  color: red;
+}
