@@ -1,0 +1,165 @@
+
+HTML attributes provide additional information about HTML elements. They are always included in the opening tag of an element and usually come in name-value pairs like name="value". Attributes help define properties or behaviors of HTML elements.
+
+Key Points about HTML Attributes:
+Placed in Opening Tag: Attributes are always added to the opening tag of an element.
+Name-Value Pair: Most attributes come in name-value pairs, separated by an equals sign (=). The value is typically enclosed in quotes.
+Global vs. Specific Attributes: Some attributes are global (applicable to all HTML elements), while others are specific to certain tags.
+
+Commonly Used HTML Attributes:
+
+1. Global Attributes
+Global attributes can be applied to any HTML element.
+
+class: Specifies one or more class names for an element. Classes are used to apply CSS styles and for JavaScript manipulation.
+
+
+<div class="container"></div>
+id: Specifies a unique identifier for an element. IDs are used for CSS styling, JavaScript, and anchoring links.
+
+
+<h1 id="main-title">Hello World</h1>
+style: Specifies inline CSS styles for an element.
+
+
+<p style="color:blue;">This is a blue text.</p>
+title: Provides additional information about an element, usually displayed as a tooltip when the mouse hovers over the element.
+
+
+<abbr title="Hypertext Markup Language">HTML</abbr>
+lang: Declares the language of the element’s content.
+
+
+<p lang="en">This is in English.</p>
+data-*: Custom data attributes used to store extra information that can be accessed via JavaScript.
+
+
+<div data-user-id="12345"></div>
+hidden: Hides the element from view, but it remains in the DOM.
+
+<div hidden>This will not be visible.</div>
+tabindex: Specifies the tab order of an element when navigating with the keyboard.
+
+
+<input type="text" tabindex="1">
+accesskey: Specifies a shortcut key to activate or focus an element.
+
+
+<button accesskey="s">Submit</button>
+draggable: Specifies whether an element is draggable.
+
+<img src="image.jpg" draggable="true">
+  
+2. Specific Attributes
+These attributes are specific to certain HTML elements.
+
+src (Source): Specifies the URL of the media file (image, video, audio, etc.).
+
+Used with: <img>, <script>, <iframe>, <audio>, <video>, <source>
+  
+<img src="image.jpg" alt="An image">
+alt (Alternative Text): Provides alternative text for an image, useful for accessibility.
+
+Used with: <img>
+
+<img src="image.jpg" alt="A description of the image">
+href (Hyperlink Reference): Specifies the URL of the page the link goes to.
+
+Used with: <a>, <link>
+
+<a href="https://www.example.com">Visit Example</a>
+target: Specifies where to open the linked document.
+
+Used with: <a>, <form>
+
+<a href="https://www.example.com" target="_blank">Open in a new tab</a>
+rel (Relationship): Specifies the relationship between the current document and the linked document.
+
+Used with: <a>, <link>
+
+<a href="https://www.example.com" rel="noopener noreferrer">Visit Example</a>
+action: Defines the URL to which the form data is sent when submitted.
+
+Used with: <form>
+
+<form action="/submit-form" method="post">
+method: Specifies the HTTP method to use when submitting the form.
+
+Used with: <form>
+
+<form action="/submit-form" method="post">
+type: Specifies the type of element or input.
+
+Used with: <input>, <button>, <script>, <link>, <style>, <embed>, etc.
+
+<input type="text" name="username">
+value: Defines the initial value of an input element.
+
+Used with: <input>, <button>, <option>, <li>, etc.
+
+<input type="submit" value="Submit">
+placeholder: Provides a short hint that describes the expected value of an input field.
+
+Used with: <input>, <textarea>
+
+<input type="text" placeholder="Enter your name">
+checked: Indicates whether an input of type checkbox or radio is checked.
+
+Used with: <input type="checkbox">, <input type="radio">
+
+<input type="checkbox" checked>
+readonly: Specifies that an input field is read-only.
+
+Used with: <input>, <textarea>
+  
+<input type="text" value="Read-only" readonly>
+disabled: Disables an element, making it unclickable and not submitted with the form.
+
+Used with: <input>, <button>, <select>, <textarea>, etc.
+
+<button disabled>Submit</button>
+multiple: Allows the selection of multiple options in a form element.
+
+Used with: <select>, <input type="file">
+
+<select multiple>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+</select>
+size: Specifies the visible number of options in a drop-down list or the width of an input field.
+
+Used with: <input>, <select>
+<select size="4">
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+</select>
+min / max: Specifies the minimum and maximum values for an input field.
+
+Used with: <input type="number">, <input type="date">, etc.
+
+<input type="number" min="1" max="10">
+step: Specifies the legal number intervals for an input field.
+
+Used with: <input type="number">, <input type="range">, etc.
+
+<input type="number" step="0.5">
+srcset: Specifies a set of images to use based on different conditions (like screen resolution).
+
+Used with: <img>
+
+<img src="small.jpg" srcset="large.jpg 2x" alt="A responsive image">
+autoplay: Specifies that the media will start playing as soon as it is ready.
+
+Used with: <audio>, <video>
+<video src="video.mp4" autopla
+  y></video>
+controls: Displays controls (like play/pause) for the media element.
+
+Used with: <audio>, <video>
+  
+<video src="video.mp4" controls></video>
+loop: Specifies that the media should start playing again from the beginning when it finishes.
+
+Used with: <audio>, <video>
+
+<audio src="audio.mp3" loop></audio>
